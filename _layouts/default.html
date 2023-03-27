@@ -127,7 +127,10 @@
                 <div class="container-fluid">
                     <!-- Content Row -->
                     <div class="row">
-                        {{ content }}
+                        {% for post in paginator.posts %}
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        <small>{{ post.date | date: "%b %-d, %Y" }}</small> on {% for cat in post.categories %}
+                        {% endfor %}
                     </div>
                 </div>
             </div>
