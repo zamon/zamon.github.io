@@ -8,15 +8,23 @@
     <meta name="description" content="personal website" />
     <title>Zainal Abidin</title>
     <script src="https://unpkg.com/htmx.org@2.0.2" integrity="sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ" crossorigin="anonymous"></script>
+    <style>
+        nav {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <nav>
-    <a href="index.html">Home</a>
-    <a href="#" hx-get="osp.html" hx-target="#container">Open Source Projects</a>
-    <a href="blog.html">Blog</a>
-    <a href="about.html">About</a>
+    <a href="index.html">Home</a> - 
+    <a href="#" hx-get="osp.html" hx-target="#container">Open Source Projects</a> - 
+    <a href="#" hx-get="blog.html" hx-target="#container">Blog</a> - 
+    <a href="#" hx-get="about.html" hx-target="#container">Curriculum Vitae</a>
 </nav>
 
-<div id="container"></div>
+<div id="container">
+    <h1>Welcome</h1>
+    <p>This is my personal website</p>
+</div>
 </body>
 </html>
